@@ -13,3 +13,7 @@ resource "aws_iam_policy_attachment" "IAMReadOnlyAccess-policy-attachment" {
   roles      = []
 }
 
+output "cocoa_arn" {
+  value = "${aws_iam_user.cocoa.arn}"
+}
+
